@@ -18,7 +18,7 @@ function main() {
     test_btreeset: [],
     test_h256: '0x0000000000000000000000000000000000000000000000000000000000000000',
   });
-  const test = reg.createType('Test', test.toHex());
+  reg.createType('Test', test.toHex());
 }
 
 main();
