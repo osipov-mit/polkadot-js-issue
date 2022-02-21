@@ -2,7 +2,7 @@
   "name": "polkadot-js-issue",
   "type": "module",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "test.js",
   "license": "MIT",
   "dependencies": {
     "@polkadot/api": "7.9.1"
