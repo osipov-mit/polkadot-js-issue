@@ -1,0 +1,19 @@
+name: 'Test createType'
+
+on: [workflow_dispatch]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install NodeJS 16.x
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 16.x
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Run test
+        run: node test.js
