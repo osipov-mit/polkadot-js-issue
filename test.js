@@ -13,12 +13,14 @@ function main() {
     types,
   });
   reg.register(types);
-  const test = reg.createType('Test', {
+  const encoded = reg.createType('Test', {
     test_u32: 1,
     test_btreeset: [],
     test_h256: '0x0000000000000000000000000000000000000000000000000000000000000000',
   });
-  reg.createType('Test', test.toHex());
+  console.log(encoded.toHex());
+  const decoded = reg.createType('Test', encoded.toHex());
+  console.log(decoded.toHex());
 }
 
 main();
